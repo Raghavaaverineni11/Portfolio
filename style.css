@@ -1,0 +1,338 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #0073e6;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Hero Section */
+#hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('assets/background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.hero-content h1 span {
+    color: #ffcc00;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #ffcc00;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e6b800;
+}
+
+/* About Me */
+#about {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about-card {
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Skills */
+#skills {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-category {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.skill-category:hover {
+    transform: scale(1.05);
+}
+
+.skill-category h3 {
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+.skill-box {
+    background: #0073e6;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Certifications */
+#certifications {
+    padding: 40px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid
+;
+}
+
+.certifications-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.certification-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.certification-card:hover {
+    transform: scale(1.05);
+}
+
+.certification-card p {
+    font-weight: bold;
+    color: #0073e6;
+}
+
+/* Contact */
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+.contact-card p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.contact-card a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0073e6;
+    color: white;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .skill-category,
+.dark-mode .certification-card,
+.dark-mode .contact-card {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .skill-box {
+    background: #009688;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Projects */
+#projects {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background: #0073e6; /* Project cards now have a blue background */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    color: white;  /* Centered and white text */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: white; /* Card contents in white */
+}
+
+.project-card ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.project-card li {
+    font-size: 0.85rem;
+    color: white; /* List items in white */
+    margin-bottom: 5px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .project-card {
+    background: #333;
+    color: white;
+}
+
+.dark-mode .project-card h3 {
+    color: #ffcc00;
+}
+
