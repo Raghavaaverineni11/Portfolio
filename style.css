@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 30px 30px;
     background: #0073e6;
     color: white;
     position: sticky;
@@ -50,26 +50,30 @@ nav a:hover {
 
 /* Hero Section */
 #hero {
-    height: 80vh;
-    display: flex;
+    /* height: 80vh; */
+    /* display: flex; */
     align-items: center;
+    margin-top: 10px;
     justify-content: center;
     text-align: center;
+    border-radius: 50px;
+    border: 1px solid white;
     background: url('assets/background.jpg') no-repeat center center/cover;
     color: white;
+    margin-bottom: 10px;
 }
 
 .hero-content {
-    background: rgba(0, 0, 0, 0.7);
+    /* background: rgba(0, 0, 0, 0.7); */
     padding: 30px;
-    border-radius: 10px;
-    width: 50%;
+    /* border-radius: 10px; */
+    width: full;
     animation: fadeIn 1.5s ease-in-out;
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid white;
@@ -98,18 +102,29 @@ nav a:hover {
 /* About Me */
 #about {
     text-align: center;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
+    /* padding: 20px; */
+    /* height: 600vh; */
+    width: full;
+    
+    border-radius: 50px;
 }
 
 .about-card {
     background: linear-gradient(135deg, #ffffff, #f0f0f0);
-    padding: 20px;
-    border-radius: 12px;
+    padding: 5px;
+    border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: auto;
     font-size: 1.1rem;
     color: #444;
+    width: full;
+    border: 1 px solid black;
+}
+.about_me_title
+{
+    color: #e6b800;;
 }
 
 /* Skills */
@@ -117,12 +132,18 @@ nav a:hover {
     padding: 40px 20px;
     text-align: center;
 }
+.skils_title
+{
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 5px;
+}
 
 .skills-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 100px;
 }
 
 .skill-category {
@@ -131,7 +152,8 @@ nav a:hover {
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
-    width: 300px;
+    width: 600px;
+    font-size: x-large;
     transition: transform 0.3s;
 }
 
