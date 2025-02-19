@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;
 
     // Enable dark mode by default
-    body.classList.add("dark-mode");
-    themeToggle.textContent = "☀️"; // Set icon to sun
+    body.classList.add("light-mode");
+    themeToggle.textContent = "🌙"; // Set icon to sun
 
     // Toggle dark/light mode
     themeToggle.addEventListener("click", () => {
@@ -16,4 +16,19 @@ document.addEventListener("DOMContentLoaded", () => {
             themeToggle.textContent = "🌙"; // Dark mode icon
         }
     });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    function startCarousel(carouselElement) {
+        const images = carouselElement.querySelectorAll(".carousel-image");
+        let index = 0;
+        setInterval(() => {
+            images[index].classList.remove("active");
+            index = (index + 1) % images.length;
+            images[index].classList.add("active");
+        }, 3000);
+    }
+
+    document.querySelectorAll(".carousel").forEach(startCarousel);
 });
