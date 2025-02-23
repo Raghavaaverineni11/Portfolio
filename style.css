@@ -111,6 +111,7 @@ nav a:hover {
 
 /* About Me */
 #about {
+    margin-top: 100px;
     text-align: center;
     /* padding: 40px 20px; */
     /* padding: 20px; */
@@ -144,6 +145,7 @@ nav a:hover {
 
 /* Skills */
 #skills {
+    margin-top: 100px;
     /* padding: 40px 20px; */
     text-align: center;
 }
@@ -151,9 +153,27 @@ nav a:hover {
 {
     /* border: 1px solid white;
     border-radius: 50px; */
+    color:#e6b800
     text-decoration: underline;
     padding: 5px;
 }
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  /* Styling for table headers and cells */
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
 
 .skills-container {
     display: flex;
@@ -299,6 +319,7 @@ footer {
 
 /* Projects */
 #projects {
+    margin-top: 100px;
     /* padding: 40px 20px; */
     text-align: center;
 }
@@ -334,6 +355,7 @@ footer {
 {
     /* border: 1px solid white;
     border-radius: 50px; */
+    color:#e6b800;
     padding: 5px;
     text-decoration: underline;
 }
@@ -420,4 +442,23 @@ footer {
 .carousel img.active {
     opacity: 1;
 }
+
+#Education{
+    margin-top: 80px;
+    text-align: center;
+}
+#masters h1{
+    color:#e6b800;
+}
+#masters h2{
+    color:#4CAF50
+}
+
+#bachelors{
+    margin-top:40px ;
+}
+#bachelors h2{
+  color: #4CAF50;
+}
+
 
