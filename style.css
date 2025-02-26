@@ -456,3 +456,90 @@ footer {
     color: white;
 }
 
+
+#contact{
+    background: #0073e6; /* Project cards now have a blue background */
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom:80px;
+    
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.dark-mode #contact{
+    background: #333;
+    color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero {
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    #about, #projects, #certifications, #contact, #Education {
+        max-width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-card, 
+    .certification-card,
+    .contact-card,
+    #Education {
+        width: 100%;
+    }
+
+    .skill-card {
+        width: 90%;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+    }
+
+    .carousel {
+        height: 200px; /* Reduce height for mobile */
+    }
+
+    .carousel img {
+        object-fit: contain;
+    }
+}
+
