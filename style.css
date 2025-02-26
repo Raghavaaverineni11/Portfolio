@@ -479,53 +479,104 @@ footer {
 /* Mobile Styles */
 @media (max-width: 768px) {
     body {
-        overflow-x: hidden; /* Prevents horizontal scrolling */
+        overflow-x: hidden;
     }
 
+    /* Navbar Adjustments */
     header {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
         padding: 0;
     }
 
-    #hero, #about, #projects, #certifications, #contact, #Education {
-        width: 100%;
-        max-width: 100%;
+    nav a {
+        font-size: 14px; /* Slightly smaller font for better fit */
+    }
+
+    /* Hero Section */
+    #hero {
+        width: 95%;
         padding: 20px;
-        margin: auto;
+        text-align: center;
+        border-radius: 20px;
     }
 
     .profile-img {
-        width: 180px; /* Keep it proportional */
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
 
-    .projects-container, 
-    .certifications-container, 
-    .skills-container {
+    /* About Section */
+    #about {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .about-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Skills Section */
+    #skills-container {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .skill-card {
+        width: 90%;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    /* Projects Section */
+    .projects-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .project-card, 
-    .certification-card, 
-    .skill-card, 
-    .contact-card, 
+    .project-card {
+        width: 95%;
+        padding: 20px;
+    }
+
+    /* Certifications Section */
+    .certifications-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certification-card {
+        width: 90%;
+    }
+
+    /* Contact Section */
+    #contact {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+
+    /* Education Section */
     #Education {
-        width: 95%; /* Ensures it fits the mobile screen */
+        width: 95%;
+        padding: 20px;
     }
 
-    .carousel {
-        height: 180px; /* Adjust carousel height */
-    }
-
-    .carousel img {
-        object-fit: contain; /* Ensure images resize properly */
+    /* Footer */
+    footer {
+        font-size: 14px;
+        padding: 15px;
     }
 }
