@@ -478,6 +478,10 @@ footer {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+    }
+
     header {
         flex-direction: column;
         text-align: center;
@@ -487,59 +491,41 @@ footer {
     nav ul {
         flex-direction: column;
         gap: 10px;
+        padding: 0;
     }
 
-    #hero {
-        margin-top: 20px;
+    #hero, #about, #projects, #certifications, #contact, #Education {
+        width: 100%;
+        max-width: 100%;
         padding: 20px;
+        margin: auto;
     }
 
     .profile-img {
-        width: 150px;
-        height: 150px;
+        width: 180px; /* Keep it proportional */
+        height: 180px;
     }
 
-    .hero-content h1 {
-        font-size: 1.5rem;
-    }
-
-    .btn {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
-
-    #about, #projects, #certifications, #contact, #Education {
-        max-width: 90%;
-        margin: auto;
-        padding: 20px;
-    }
-
-    .projects-container {
+    .projects-container, 
+    .certifications-container, 
+    .skills-container {
         flex-direction: column;
-        gap: 20px;
+        align-items: center;
     }
 
     .project-card, 
-    .certification-card,
-    .contact-card,
+    .certification-card, 
+    .skill-card, 
+    .contact-card, 
     #Education {
-        width: 100%;
-    }
-
-    .skill-card {
-        width: 90%;
-    }
-
-    .skills {
-        flex-wrap: wrap;
+        width: 95%; /* Ensures it fits the mobile screen */
     }
 
     .carousel {
-        height: 200px; /* Reduce height for mobile */
+        height: 180px; /* Adjust carousel height */
     }
 
     .carousel img {
-        object-fit: contain;
+        object-fit: contain; /* Ensure images resize properly */
     }
 }
-
