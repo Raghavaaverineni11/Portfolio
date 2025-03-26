@@ -32,3 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelectorAll(".carousel").forEach(startCarousel);
 });
+
+function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("show");
+}
